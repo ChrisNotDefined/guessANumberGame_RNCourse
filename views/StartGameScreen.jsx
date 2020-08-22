@@ -43,7 +43,9 @@ const StartGameScreen = (props) => {
     Keyboard.dismiss();
   };
 
-  const beginGameHandler = () => {};
+  const beginGameHandler = () => {
+    props.onStartGame(selectedNum);
+  }
 
   let confirmedOutput;
 
